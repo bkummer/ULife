@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kumballz.brian.stop.ULLifeHacksActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <GridLayout
+        android:paddingTop="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:background="#006699">
+
+        <Button
+            android:id="@+id/ULLifeHackBtn1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:background="@drawable/ic_study_black_20dp"
+            android:onClick="onClickStudyActivity"
+            android:scaleType="fitCenter"
+            android:text="@string/lifeHackBtn1"
+            android:textColor="@color/homeBtnTxt"/>
+
+        <Button
+            android:id="@+id/ULLifeHackBtn2"
+            android:background="@drawable/ic_toilet_black_20dp"
+            android:text="@string/lifeHackBtn2"
+            android:textColor="@color/homeBtnTxt"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onClickToiletActivity"/>
+
+        <Button
+            android:id="@+id/ULLifeHackBtn3"
+            android:background="@drawable/ic_parking_black_20dp"
+            android:text="@string/lifeHackBtn3"
+            android:textColor="@color/homeBtnTxt"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onClickParkingActivity"/>
+
+        <Button
+            android:id="@+id/ULLifeHackBtn4"
+            android:background="@drawable/ic_bus_black_24dp"
+            android:text="@string/lifeHackBtn4"
+            android:textColor="@color/homeBtnTxt"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onClickBusActivity"/>
+
+        <Button
+            android:id="@+id/ULLifeHackBtn5"
+            android:background="@drawable/ic_shortcut_black_16dp"
+            android:text="@string/lifeHackBtn5"
+            android:textSize="16sp"
+            android:textColor="@color/homeBtnTxt"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onClickShortcutActivity"/>
+
+        <Button
+            android:id="@+id/ULLifeHackBtn6"
+            android:background="@drawable/ic_scenery_black_20dp"
+            android:text="@string/lifeHackBtn6"
+            android:textColor="@color/homeBtnTxt"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onClickSceneryActivity"/>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>
